@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #ff6f61; /* Rojo para llamar la atención */
+    color: white;
+    padding: 20px 10%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+header .cta-button {
+    background-color: #ffb300;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+header .cta-button:hover {
+    background-color: #e68900;
+}
+
+/* Sección de hamburguesas destacadas */
+.productos {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 10%;
+    flex-wrap: wrap;
+}
+
+.producto-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+}
+
+.producto-card h3 {
+    color: #ff6f61;
+}
+
+.producto-card p {
+    color: #666;
+}
+
+.precio {
+    font-size: 1.5em;
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+/* Sección de llamada a la acción */
+.cta-section {
+    background-color: #ffb300;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.cta-section .cta-button {
+    font-size: 1.5em;
+    padding: 15px 30px;
+}
+
+/* Sección de contacto */
+.contacto {
+    background-color: #ff6f61;
+    padding: 40px 10%;
+    text-align: center;
+    color: white;
+}
+
+.contacto h2 {
+    font-size: 2em;
+}
+
+.contacto p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        padding: 20px 5%;
+    }
+
+    .cta-section {
+        padding: 30px 5%;
+    }
+
+    .cta-button {
+        font-size: 1em;
+    }
+}
